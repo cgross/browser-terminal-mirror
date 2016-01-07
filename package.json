@@ -1,0 +1,27 @@
+{
+  "name": "browser-terminal-mirror",
+  "version": "1.0.0",
+  "description": "Redirect console output to the browser (from grunt, gulp, or any node app).",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/cgross/browser-terminal-mirror.git"
+  },
+  "homepage": "https://github.com/cgross/browser-terminal-mirror",
+  "author": {
+    "name": "Chris Gross",
+    "email": "schtoo@schtoo.com"
+  },
+  "engines": {
+    "node": ">= 0.10.0"
+  },
+  "licenses": [
+    {
+      "type": "MIT"
+    }
+  ],
+  "dependencies": {
+    "hooker": "~0.2.3",
+    "ansi-to-html": "~0.1.1",
+    "ws": "~0.4.31"
+  }
+}
