@@ -1,6 +1,6 @@
 {
   "name": "browser-terminal-mirror",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Redirect console output to the browser (from grunt, gulp, or any node app).",
   "repository": {
     "type": "git",

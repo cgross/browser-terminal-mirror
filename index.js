@@ -8,7 +8,7 @@ module.exports = function (options) {
 
     options = options || {};
     options.port = options.port || 37901;
-    options.errorPattern = options.errorPattern || [/.{5}Warning:/g];
+    options.errorPattern = options.errorPattern || [/Warning:/g,/errored\safter/g];
     if (!Array.isArray(options.errorPattern)) {
         options.errorPattern = [options.errorPattern];
     }
