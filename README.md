@@ -6,6 +6,7 @@ Want to see your linting errors or other _watch_ task output during development 
 
 Browser-terminal-mirror hooks into nodes stdout and mirrors all output, via websockets, to any browser pages that include the `client.js` file.
 
+Example showing Gulp output in a web page:
 ![](screenshot.png)
 
 Only works in modern browsers with WebSocket support.
@@ -24,15 +25,17 @@ mirror({
 });
 ```
 
-When starting `mirror`, the `errorPattern` option is used to determine when the browser div with the console output should pop up and overlay your page.  Normally, the output is mirrored into a div that is hidden.
-Only when a line is output that that matches one of the `errorPattern` regex's will the div become visible.  This is necessary since Grunt and Gulp do NOT print errors to stderr, only to stdout.  The distinct patterns
-for Grunt and Gulp are the default error patterns if none are specified.
-
 In your html file, add the following script tag during development:
 
 ```html
 <script src="node_modules/browser-terminal-output/client.js"></script>
 ```
+
+When starting `mirror`, the `errorPattern` option is used to determine when the browser div with the console output should pop up and overlay your page.  Normally, the output is mirrored into a div that is hidden.
+Only when a line is output that that matches one of the `errorPattern` regex's will the div become visible.  This is necessary since Grunt and Gulp do NOT print errors to stderr, only to stdout.  The distinct patterns
+for Grunt and Gulp are the default error patterns if none are specified.
+
+
 
 # API
 
